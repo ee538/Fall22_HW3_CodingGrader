@@ -36,6 +36,9 @@ class SinglyLinkedList {
   // Copy constructor.
   SinglyLinkedList(const SinglyLinkedList &rhs);
 
+  // Destructor
+  ~SinglyLinkedList();
+  
   // Returns true if the list is empty, false otherwise.
   bool empty();
 

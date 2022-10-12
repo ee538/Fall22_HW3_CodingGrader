@@ -207,7 +207,7 @@ TEST(BinaryTree, PreOrder1) {
   auto bt = BinaryTree(in);
 
   EXPECT_THAT(bt.PreOrder(root),
-              ElementsAreArray({7, 3, 8, 1, 9, 4, 10, 0, 11, 5, 12, 2, 6}));
+              ElementsAreArray({0, 1, 3, 7, 8, 4, 9, 10, 2, 5, 11, 12, 6}));
 }
 
 TEST(BinaryTree, PreOrder2) {
@@ -218,7 +218,7 @@ TEST(BinaryTree, PreOrder2) {
   std::cout << "root: " << root << std::endl;
   auto bt = BinaryTree(in);
 
-  EXPECT_THAT(bt.PreOrder(root), ElementsAreArray({1, 0, 11, 5, 12, 2, 6}));
+  EXPECT_THAT(bt.PreOrder(root), ElementsAreArray({0, 1, 2, 5, 11, 12, 6}));
 }
 
 TEST(BinaryTree, PreOrderMiddle) {
@@ -229,7 +229,7 @@ TEST(BinaryTree, PreOrderMiddle) {
   std::cout << "root: " << root << std::endl;
   auto bt = BinaryTree(in);
 
-  EXPECT_THAT(bt.PreOrder(root), ElementsAreArray({11, 5, 12, 2, 6}));
+  EXPECT_THAT(bt.PreOrder(root), ElementsAreArray({2, 5, 11, 12, 6}));
 }
 
 TEST(BinaryTree, PreOrderInvalid) {
